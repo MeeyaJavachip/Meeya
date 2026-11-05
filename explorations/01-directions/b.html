@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <title>Night Shift — Howl</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="b.css">
+  </head>
+  <body class="theme-b">
+    <div class="app-shell">
+      <header class="side-nav">
+        <a class="brand" href="index.html">Howl</a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#feed" aria-current="page">Feed</a>
+          <a href="#places">Places</a>
+        </nav>
+      </header>
+      <main class="feed-column" id="feed">
+        <header class="feed-heading">
+          <h1>Night Shift</h1>
+          <p>On campus, as it happens.</p>
+        </header>
+        <section data-feed aria-label="Campus posts"></section>
+      </main>
+      <aside class="place-rail" id="places">
+        <h2>Places in the feed</h2>
+        <nav class="place-list" data-places aria-label="Jump to a place"></nav>
+      </aside>
+    </div>
+    <script src="posts.js"></script>
+    <script src="feed.js"></script>
+  </body>
+</html>

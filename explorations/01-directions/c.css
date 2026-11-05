@@ -1,0 +1,95 @@
+body.theme-c {
+  --paper: #102235;
+  --ink: #f7f6f1;
+  --muted: #b7c3d0;
+  --rule: #304558;
+  --signal: #ffcf66;
+  --headline-font: "Space Grotesk", Arial, sans-serif;
+  --body-font: "Inter", Arial, sans-serif;
+  background: var(--paper);
+}
+
+.theme-c .app-shell {
+  grid-template-columns: 180px minmax(0, 660px) 200px;
+  gap: 40px;
+}
+
+.theme-c .side-nav {
+  color: #f7f6f1;
+}
+
+.theme-c .nav-links a[aria-current="page"] {
+  color: #ffffff;
+  background: #24415c;
+}
+
+.theme-c .nav-links a:hover,
+.theme-c .place-list a:hover {
+  color: #ffffff;
+}
+
+.theme-c .feed-column {
+  overflow: hidden;
+  margin-top: 18px;
+  min-height: calc(100vh - 18px);
+  border: 0;
+  border-radius: 12px 12px 0 0;
+  background: #fffdf8;
+  color: #222a33;
+}
+
+.theme-c .feed-heading {
+  padding-top: 24px;
+  border-color: #e7e5df;
+}
+
+.theme-c .feed-heading p,
+.theme-c .post-location {
+  color: #5d6874;
+}
+
+.theme-c .post {
+  border-color: #e7e5df;
+}
+
+.theme-c .post-location {
+  text-decoration-color: transparent;
+}
+
+.theme-c .post-location:hover {
+  color: #2f83f7;
+  text-decoration-color: currentColor;
+}
+
+.theme-c .place-rail h2 {
+  color: #ffffff;
+}
+
+.theme-c .place-list a {
+  color: #c4cfda;
+}
+
+.theme-c a:focus-visible {
+  outline-color: #2f83f7;
+}
+
+@media (max-width: 899px) {
+  .theme-c .app-shell {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+
+  .theme-c .feed-column {
+    margin-top: 0;
+    min-height: auto;
+    border-radius: 10px;
+  }
+
+  .theme-c .side-nav {
+    background: #102235;
+  }
+
+  .theme-c .nav-links a[aria-current="page"] {
+    background: #24415c;
+  }
+}

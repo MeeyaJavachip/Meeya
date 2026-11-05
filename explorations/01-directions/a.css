@@ -1,0 +1,36 @@
+body.theme-a {
+  --paper: #fffaf0;
+  --ink: #22211e;
+  --muted: #716e67;
+  --rule: #ded8cb;
+  --signal: #ffcf66;
+  --headline-font: "Newsreader", Georgia, serif;
+  --body-font: "Inter", Arial, sans-serif;
+}
+
+.theme-a .nav-links a[aria-current="page"] {
+  background: var(--signal);
+}
+
+.theme-a .feed-heading h1 {
+  font-size: 54px;
+}
+
+.theme-a .post {
+  padding-block: 22px 24px;
+}
+
+.theme-a .post-text {
+  font-size: 17px;
+  line-height: 1.58;
+}
+
+.theme-a .post-location {
+  text-decoration-style: dotted;
+}
+
+@media (max-width: 899px) {
+  .theme-a .feed-heading h1 {
+    font-size: 46px;
+  }
+}

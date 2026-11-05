@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#102235">
+    <title>Open Tab — Howl</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="c.css">
+  </head>
+  <body class="theme-c">
+    <div class="app-shell">
+      <header class="side-nav">
+        <a class="brand" href="index.html">Howl</a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#feed" aria-current="page">Feed</a>
+          <a href="#places">Places</a>
+        </nav>
+      </header>
+      <main class="feed-column" id="feed">
+        <header class="feed-heading">
+          <h1>Open Tab</h1>
+          <p>Campus life, in a good light.</p>
+        </header>
+        <section data-feed aria-label="Campus posts"></section>
+      </main>
+      <aside class="place-rail" id="places">
+        <h2>Places in the feed</h2>
+        <nav class="place-list" data-places aria-label="Jump to a place"></nav>
+      </aside>
+    </div>
+    <script src="posts.js"></script>
+    <script src="feed.js"></script>
+  </body>
+</html>

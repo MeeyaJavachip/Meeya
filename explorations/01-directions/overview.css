@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f1e9;
+  color: #22211e;
+  font-family: Inter, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+}
+
+a:focus-visible {
+  outline: 3px solid #2f83f7;
+  outline-offset: 4px;
+}
+
+.overview {
+  width: min(100% - 40px, 1360px);
+  margin: 0 auto;
+  padding: 36px 0 72px;
+}
+
+.overview-header {
+  max-width: 740px;
+  margin-bottom: 34px;
+}
+
+.overview-header h1 {
+  margin: 0;
+  font-family: "Newsreader", Georgia, serif;
+  font-size: clamp(42px, 6vw, 64px);
+  font-weight: 600;
+  letter-spacing: -0.055em;
+  line-height: 1;
+}
+
+.overview-header p {
+  margin: 14px 0 0;
+  color: #625e56;
+  font-size: 17px;
+}
+
+.direction {
+  margin-top: 24px;
+  padding: 24px;
+  border: 1px solid #d9d4c9;
+  background: #fffdf8;
+}
+
+.direction-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e4e0d7;
+}
+
+.direction-top h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.direction-top a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  color: #23476a;
+  font-size: 14px;
+  font-weight: 600;
+  text-underline-offset: 4px;
+}
+
+.direction-plan {
+  max-width: 880px;
+  margin: 12px 0 18px;
+  color: #48463f;
+  font-size: 15px;
+}
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: minmax(154px, 0.38fr) minmax(0, 1.62fr);
+  align-items: start;
+  gap: 20px;
+}
+
+.preview h3 {
+  margin: 0 0 8px;
+  color: #615e57;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.preview-frame {
+  position: relative;
+  overflow: hidden;
+  background: #e5e2da;
+}
+
+.preview-frame iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.phone-frame {
+  width: 100%;
+  aspect-ratio: 390 / 844;
+  border-radius: 12px;
+}
+
+.laptop-frame {
+  width: 100%;
+  aspect-ratio: 1280 / 800;
+  border-radius: 4px;
+}
+
+.overview-footer {
+  margin-top: 26px;
+  color: #625e56;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .overview {
+    width: min(100% - 24px, 540px);
+    padding-top: 24px;
+  }
+
+  .direction {
+    padding: 16px;
+  }
+
+  .direction-top {
+    align-items: flex-start;
+  }
+
+  .preview-grid {
+    grid-template-columns: minmax(112px, 0.38fr) minmax(0, 1.62fr);
+    gap: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .direction-top {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .preview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .phone-frame {
+    width: min(100%, 220px);
+  }
+}

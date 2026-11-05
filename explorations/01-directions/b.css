@@ -1,0 +1,63 @@
+body.theme-b {
+  color-scheme: dark;
+  --paper: #000000;
+  --ink: #f4f4f4;
+  --muted: #a3a3a3;
+  --rule: #292929;
+  --signal: #ffcf66;
+  --headline-font: "IBM Plex Sans", Arial, sans-serif;
+  --body-font: "IBM Plex Sans", Arial, sans-serif;
+}
+
+.theme-b .brand {
+  font-size: 32px;
+  letter-spacing: -0.055em;
+}
+
+.theme-b .nav-links a {
+  border-radius: 999px;
+}
+
+.theme-b .nav-links a[aria-current="page"] {
+  background: #222222;
+}
+
+.theme-b .feed-heading h1 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.045em;
+}
+
+.theme-b .feed-heading p,
+.theme-b .post-byline {
+  font-size: 14px;
+}
+
+.theme-b .post {
+  padding-block: 16px 18px;
+}
+
+.theme-b .post-text {
+  margin-top: 5px;
+  line-height: 1.48;
+}
+
+.theme-b .post-location {
+  color: #a3a3a3;
+}
+
+.theme-b .place-rail h2 {
+  font-family: var(--body-font);
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.theme-b .place-list a {
+  color: #b8b8b8;
+}
+
+@media (max-width: 899px) {
+  .theme-b .feed-heading h1 {
+    font-size: 34px;
+  }
+}
