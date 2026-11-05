@@ -1,0 +1,19 @@
+body.variant-a2 {
+  --paper: #fffaf0;
+  --ink: #22211e;
+  --muted: #716e67;
+  --rule: #ded8cb;
+  --signal: #ffcf66;
+  --accent-one: #6b3f58;
+  --accent-two: #4e6d91;
+  --accent-soft: #efe3e9;
+  --accent-two-soft: #e1eaf2;
+}
+
+.variant-a2 .profile .avatar {
+  border-radius: 12px 12px 12px 3px;
+}
+
+.variant-a2 .post-action[aria-pressed="true"] {
+  border-radius: 999px;
+}

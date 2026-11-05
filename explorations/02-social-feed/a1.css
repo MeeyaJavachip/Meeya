@@ -1,0 +1,11 @@
+body.variant-a1 {
+  --paper: #fffaf0;
+  --ink: #22211e;
+  --muted: #716e67;
+  --rule: #ded8cb;
+  --signal: #ffcf66;
+  --accent-one: #a33e32;
+  --accent-two: #496d5b;
+  --accent-soft: #f0e2d6;
+  --accent-two-soft: #e2ebe3;
+}

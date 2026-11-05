@@ -1,0 +1,15 @@
+body.variant-a3 {
+  --paper: #fffaf0;
+  --ink: #22211e;
+  --muted: #716e67;
+  --rule: #ded8cb;
+  --signal: #ffcf66;
+  --accent-one: #805127;
+  --accent-two: #2f6d69;
+  --accent-soft: #f1e7d8;
+  --accent-two-soft: #e0eeeb;
+}
+
+.variant-a3 .profile .avatar {
+  border-radius: 3px 14px 3px 14px;
+}
